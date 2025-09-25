@@ -1,0 +1,159 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  color: #f5f5f5;
+  line-height: 1.7;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: #ffb6d9;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ff82c9;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('assets/bg.jpg') no-repeat center/cover;
+}
+
+.glass-box {
+  background: rgba(255, 182, 217, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+.glass-box h2 {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.glass-box span {
+  color: #ff9ed9;
+}
+
+.glass-box p {
+  margin: 15px 0;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.glass-box button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 25px;
+  background: #ff82c9;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.glass-box button:hover {
+  background: #ff4fa7;
+}
+
+/* About */
+.about, .works, .contact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about h2, .works h2, .contact h2 {
+  color: #ff9ed9;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Works */
+.work-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.work-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  width: 260px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.work-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(255, 130, 201, 0.4);
+}
+
+/* Contact */
+.btn-contact {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  background: #ff82c9;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-contact:hover {
+  background: #ff4fa7;
+}
+
+/* Footer */
+footer {
+  background: #0d0d0d;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
